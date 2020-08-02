@@ -5,7 +5,9 @@
 
 typedef enum {
     // DON'T CHANGE THIS VALUE!
-    ERROR_SUCCESS = 0
+    ERROR_SUCCESS = 0,
+
+    ERROR_NOT_IMPLEMENTED = 0x1000,
 } ErrorCode;
 
 /**
