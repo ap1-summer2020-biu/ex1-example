@@ -21,4 +21,4 @@ make
 
 You should probably be able to compile it however you want, but this is what I did, and it works.
 
-The executable created is named Main.
+This will create liberrorCode.so, main, and most importantly - libmatrix.so
