@@ -1,2 +1,7 @@
 build/*
+
+#those are files vim creates for when it is open.
 *.swp
+
+*.so
+*.o
