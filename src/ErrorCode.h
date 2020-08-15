@@ -5,7 +5,12 @@
 
 typedef enum {
     // DON'T CHANGE THIS VALUE!
-    ERROR_SUCCESS = 0
+    ERROR_SUCCESS = 0, // error code 0: success!
+    MATRIX_CREATION_FAILURE = 1, // error code 1: memmory allocation failed while creating matrix
+    MATRIX_SIZE_FAILURE = 2, // error code 2: matrices should have same size
+    MATRIX_MULT_FAILURE = 3, // error code 3: matrices dimensions don't match up for multiplication
+    INDEX_FAILURE = 4, // error code 4: indeces out of matrix's bounds
+	NEG_INDEX_FAILURE = 5, // error code 5: matrix size/indeces must be positive
 } ErrorCode;
 
 /**
