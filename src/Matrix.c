@@ -102,7 +102,7 @@ ErrorCode matrix_multiplyMatrices(PMatrix* result, CPMatrix lhs, CPMatrix rhs) {
 		for (uint32_t it = 0; it < lhs->cols; ++it) {
 			double lv, rv;
 			matrix_getValue(lhs, i, it, &lv);
-			matrix_getValue(lhs, it, j, &rv);
+			matrix_getValue(rhs, it, j, &rv);
 			innerMult += lv * rv;
 		}
 		matrix_setValue(*result, i, j, innerMult);
